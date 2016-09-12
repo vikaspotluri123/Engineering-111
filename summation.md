@@ -26,4 +26,4 @@ _Note: assuming not(bool) returns the opposite boolean value_
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index = index + 1
 
-&nbsp;&nbsp;&nbsp;&nbsp;return index + curSum
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return index + curSum
