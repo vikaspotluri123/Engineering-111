@@ -10,6 +10,7 @@ function factorial(upper)
 	while(!(index >= upper))
 		factorial_helper();
 	console.log(upper,factorial);
+	return factorial;
 }
 
 for(var i = 0; i<100;i++)

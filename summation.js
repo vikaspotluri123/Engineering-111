@@ -7,7 +7,13 @@ function summation(upper)
 		sum = sum + index;
 	}
 	summation_helper();
-	while(1(index > upper))
+	while(!(index >= upper))
 		summation_helper();
-	console.log(sum,upper);
+	console.log(upper,sum);
+	return sum;
+}
+
+for(var i = 1; i <100;i++) //In the flowchart, the requirement was a number > 0
+{
+	summation(i);
 }
