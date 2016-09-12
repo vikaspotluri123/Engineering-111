@@ -1,4 +1,4 @@
-/***Note: assuming not(bool) returns the opposite boolean value***/
+*Note: assuming not(bool) returns the opposite boolean value*
 *Procedure* _summation_
 	*Inputs*: _n_ (integer > 0)
 	*Outputs*: _sum_ (integer)

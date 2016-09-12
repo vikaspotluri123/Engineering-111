@@ -1,4 +1,4 @@
-/***Note: assuming not(bool) returns the opposite boolean value***/
+*Note: assuming not(bool) returns the opposite boolean value*
 *Procedure* factorial
 	*Inputs*: _upper_ (integer > 1)
 	*Outputs*: _fact_ (integer)
