@@ -1,0 +1,7 @@
+sprintf('Howdy, world!')
+
+ans =
+
+Howdy, world!
+
+diary off

@@ -1,0 +1,95 @@
+help input
+ <strong>input</strong>  Prompt for user input. 
+    RESULT = <strong>input</strong>(PROMPT) displays the PROMPT string on the screen, waits
+    for input from the keyboard, evaluates any expressions in the input,
+    and returns the value in RESULT. To evaluate expressions, <strong>input</strong> accesses
+    variables in the current workspace. If you press the return key without
+    entering anything, <strong>input</strong> returns an empty matrix.
+ 
+    STR = <strong>input</strong>(PROMPT,'s') returns the entered text as a MATLAB string,
+    without evaluating expressions.
+ 
+    To create a prompt that spans several lines, use '\n' to indicate each
+    new line. To include a backslash ('\') in the prompt, use '\\'.
+ 
+    Example:
+ 
+       reply = input('Do you want more? Y/N [Y]:','s');
+       if isempty(reply)
+          reply = 'Y';
+       end
+ 
+    See also <a href="matlab:help keyboard">keyboard</a>.
+
+    <a href="matlab:doc input">Reference page for input</a>
+
+name = input('Yo homie what''s your name?')
+Yo homie what's your name?Vikas
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('input')" style="font-weight:bold">input</a>
+Undefined function or variable 'Vikas'.
+} 
+Yo homie what's your name?name = input('Yo homie what''s your name?','s')
+Yo homie what's your name?vikas
+
+name =
+
+vikas
+
+clc
+name = input('Yo homie what''s your name? ','s')
+Yo homie what's your name? Vikas
+
+name =
+
+Vikas
+
+name = input('Yo homie what''s your name? ','s'); sprintf('%s','Hello, ' + name)
+Yo homie what's your name? vikas
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plus')" style="font-weight:bold"> + </a>
+Matrix dimensions must agree.
+} 
+name = input('Yo homie what''s your name? ','s'); sprintf('%s','Hello, [name]')
+Yo homie what's your name? vikas
+
+ans =
+
+Hello, [name]
+
+name = input('Yo homie what''s your name? ','s'); sprintf('%s','Hello, ',name)
+Yo homie what's your name? vikas
+
+ans =
+
+Hello, vikas
+
+clc
+name = input('Yo homie what''s your name? ','s'); age = input('I know we just met, but how old are you? '); sprintf('%s','Hello, ',name,)
+ name = input('Yo homie what''s your name? ','s'); age = input('I know we just met, but how old are you? '); sprintf('%s','Hello, ',name,)
+                                                                                                                                         
+{Error: Unbalanced or unexpected parenthesis or bracket.
+} 
+name = input('Yo homie what''s your name? ','s'); age = input('I know we just met, but how old are you? '); sprintf('%s','Hello, ',name,' ! You are ',age,' Earth years old!')
+Yo homie what's your name? Vikas
+I know we just met, but how old are you? 18
+
+ans =
+
+Hello, Vikas ! You are  Earth years old!
+
+name = input('Yo homie what''s your name? ','s'); age = input('I know we just met, but how old are you? ','s'); sprintf('%s','Hello, ',name,' ! You are ',age,' Earth years old!')
+Yo homie what's your name? Vikas
+I know we just met, but how old are you? 18
+
+ans =
+
+Hello, Vikas ! You are 18 Earth years old!
+
+name = input('Yo homie what''s your name? ','s'); age = input('I know we just met, but how old are you? ','s'); sprintf('%s','Hello, ',name,' ! You are ',age,' Earth years old!')
+Yo homie what's your name? Vikas
+I know we just met, but how old are you? 18
+
+ans =
+
+Hello, Vikas ! You are 18 Earth years old!
+
+diary off

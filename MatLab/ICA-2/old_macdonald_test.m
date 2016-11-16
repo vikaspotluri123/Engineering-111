@@ -1,0 +1,9 @@
+old_macdonald('Dog','woof');
+fprintf('\n');
+old_macdonald('Cat','meow');
+fprintf('\n');
+old_macdonald('Bird','tweet');
+fprintf('\n');
+old_macdonald('Mouse','squeek');
+fprintf('\n');
+old_macdonald('Frog','croak');
