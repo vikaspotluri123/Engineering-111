@@ -1,0 +1,12 @@
+testa = zeros(1,3);
+testb = zeros(1,3);
+testc = zeros(1,3);
+testd = zeros(1,3);
+teste = zeros(1,3);
+testf = zeros(1,3);
+[testa(1),testa(2),testa(3)] = sort3(1,2,3)
+[testb(1),testb(2),testb(3)] = sort3(1,3,2)
+[testc(1),testc(2),testc(3)] = sort3(2,1,3)
+[testd(1),testd(2),testd(3)] = sort3(2,3,1)
+[teste(1),teste(2),teste(3)] = sort3(3,1,2)
+[testf(1),testf(2),testf(3)] = sort3(3,2,1)
